@@ -96,6 +96,7 @@ article {
     1fr 1fr 1fr ;
 }
 .row2 {
+    margin-top: -110px;
     display: grid;
     grid-template-columns: 
     1fr 1fr ;
@@ -106,7 +107,10 @@ ul {
     list-style-position: inside;
     padding-left: 3px;
 }
-
+li {
+    width: 200px;
+    padding-left: 5px;
+}
 h1 {
     font-weight: 500;
     font-kerning: normal;
