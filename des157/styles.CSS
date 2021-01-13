@@ -64,7 +64,6 @@ img {
     width: 0%; 
     padding-left: 0%; 
     padding-right: 0%;
-    cursor: pointer;
 }
 
 .animate:hover + .animateL2 {
@@ -74,7 +73,6 @@ img {
     width: 0%; 
     padding-left: 0%; 
     padding-right: 0%;
-    cursor: pointer;
 }
 /* End of Header Section */
 
@@ -122,6 +120,7 @@ ul {
 li {
     width: 200px;
     padding-left: 5px;
+    list-style-type: none;
 }
 
 img {
