@@ -64,6 +64,7 @@ img {
     width: 0%; 
     padding-left: 0%; 
     padding-right: 0%;
+    transition-duration: 1.5;
 }
 
 .animate:hover + .animateL2 {
@@ -151,17 +152,15 @@ li:hover {
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.753),rgba(255, 255, 0, 0)); */
     position: absolute;
     top: 300px;
-    width: 250px;
+    width: 17px;
     height: 320px;
 }
-.column1 {
-    left: 26%;
-}
+
 .column2 {
     left: 43%;
 }
 .column3 {
-    left: 60%;
+    left: 61%;
 }
 
 /* Footer */
