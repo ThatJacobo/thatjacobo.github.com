@@ -95,6 +95,8 @@ article {
     grid-template-rows: 1fr;
     margin-left: 30%;
     margin-right: 20%;
+    margin-top: 20px;
+    z-index: 2;
 }
 
 .row1 {
@@ -112,14 +114,15 @@ article {
 }
 
 ul {
+    margin-left: -30px;
     list-style-position: inside;
     margin-top: -5px;
     padding-left: 3px;
 }
 
 li {
-    width: 200px;
-    padding-left: 5px;
+    width: 160px;
+    padding-left: 40px;
     list-style-type: none;
 }
 
@@ -139,6 +142,26 @@ a:hover {
 li:hover {
     background-color: black;
     color: orange;
+}
+
+#column {
+    /* background-color: black; */
+    z-index: -1;
+    background-image: linear-gradient(rgba(255, 255, 0, 0),rgba(0, 0, 0, 0.753));
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.753),rgba(255, 255, 0, 0)); */
+    position: absolute;
+    top: 300px;
+    width: 250px;
+    height: 320px;
+}
+.column1 {
+    left: 26%;
+}
+.column2 {
+    left: 43%;
+}
+.column3 {
+    left: 60%;
 }
 
 /* Footer */
