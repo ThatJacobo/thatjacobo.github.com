@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Experiments</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Experiments </h1>
+    <h2>You typed:</h2>
+    <div id="spd">
+    <p>Hello</p>
+    </div>
+    <script>
+        /* Suggested prompt: 
+        Program that makes all of the first letters in each word typed in a prompt uppercase */
+        /* also made the code display wahat you typed on the webpage */
+
+        var coolWords = prompt("please type a phrase");
+        coolWords = coolWords.toLowerCase();
+        var newCoolWords = [];
+        var myString = "";
+        function UserWords() {
+            for(var i=0; i < coolWords.length; i++) {
+                if((i==0) || (coolWords[i-1] === " ")) {
+                    newCoolWords.push(coolWords[i].toUpperCase());
+                }
+                else {
+                    newCoolWords.push(coolWords[i]);
+                }
+            };
+
+            for(var j=0; j < newCoolWords.length; j++){
+                myString += newCoolWords[j]
+            }
+            return myString;
+        }
+
+        function everthingElse(strings) {
+            console.log(strings);
+            var myStuff = document.getElementById('spd');
+            myStuff.innerHTML = `<p>${strings}</p>`;
+        }
+
+
+    UserWords();
+    everthingElse(myString);
+
+
+    </script>
+
+</body>
+
+</html>
