@@ -5,11 +5,6 @@ html {
     background-size: auto 100%;
 }
 
-.container {
-    width: 100px;
-    height: 10px;
-    overflow: hidden;
-    }
 
 .scrolling {
     height: 23%;
