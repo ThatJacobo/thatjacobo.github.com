@@ -1,0 +1,163 @@
+html {
+    background-color: rgb(255, 210, 255);
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background: url(images/Animals.jpg);
+    background-size: auto 100%;
+}
+
+
+.scrolling {
+    height: 23%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    background: url(images/ML_BG.jpg);
+    background-size: auto 100%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    animation: diagLines 10s linear infinite;
+    z-index: -2;
+}
+.scroll2 {
+    height: 23%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: url(images/ML_BG.jpg) repeat-x;
+    background-size: auto 100%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    animation: diagLines2 10s linear infinite;
+    z-index: -2;
+}
+
+
+h1 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    text-align: center;
+    font-size: 62pt;
+    color: rebeccapurple;
+    margin-top: 20px;
+    
+}
+
+h2 {
+    margin-top: -65px;
+    font-size: 20pt;
+    text-align: center;
+}
+
+form {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 3%;
+    display: grid ;
+    grid-template-columns: 1fr 1fr;
+}
+label {
+    margin-bottom: 20px;
+}
+
+input { 
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+article {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    z-index: 12;
+}
+
+.tatami.hidden {
+    left: -2000px;
+}
+
+.tatami {
+    position: absolute;
+    left: 33%;
+    margin-top: -35px;
+    z-index: 12;
+}
+
+.bgDv {
+    background-color: white;
+    width: 45%;
+    height: 63%;
+    border-radius: 25px;
+    z-index: -1;
+    position: absolute;
+    top: 160px;
+    left: 28%;
+    right: 28%;
+}
+
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+.hiddenReset {
+    visibility: hidden;
+    display: none;
+}
+.showing {
+    visibility: visible;
+    z-index: 5;
+}
+
+
+footer {
+    display: flex;
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 40%;
+}
+
+a {
+    padding: 20px;
+    color: rebeccapurple;
+}
+
+#userResponse {
+    position: absolute;
+    margin-left: 30%;
+    margin-right: 30%;
+    top: 200px;
+    transform: (-50%, -50%);
+    font-size: 14pt;
+    line-height: 28pt;
+    z-index: 11;
+}
+
+#rst {
+    position: absolute;
+    margin-left: 40%;
+    margin-top: -58px;
+    z-index: 7;
+}
+
+input.showing {
+    color: rgb(0, 41, 0);
+    background-color: rgb(147, 255, 153);
+}
+input.showing2 {
+    color: rgb(41, 0, 0);
+    background-color: rgb(255, 131, 131);
+}
+
+
+
+
+@keyframes diagLines {
+    0% {left:0; width: 100%;}
+    100% {left:-100%; width: 200%}
+}
+@keyframes diagLines2 {
+    0% {left: 97.5%; width: 2.5%;}
+    100% {left:-2.5%; width: 102.5%}
+}
