@@ -19,6 +19,7 @@ html {
     animation: diagLines 10s linear infinite;
     z-index: -2;
 }
+
 .scroll2 {
     height: 23%;
     width: 100%;
@@ -40,7 +41,7 @@ h1 {
     font-size: 62pt;
     color: rebeccapurple;
     margin-top: 20px;
-    
+
 }
 
 h2 {
@@ -53,14 +54,15 @@ form {
     margin-left: 30%;
     margin-right: 30%;
     margin-top: 3%;
-    display: grid ;
+    display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
 label {
     margin-bottom: 20px;
 }
 
-input { 
+input {
     margin-left: 50px;
     margin-bottom: 20px;
 }
@@ -101,10 +103,12 @@ p {
     visibility: hidden;
     display: none;
 }
+
 .hiddenReset {
     visibility: hidden;
     display: none;
 }
+
 .showing {
     visibility: visible;
     z-index: 5;
@@ -145,6 +149,7 @@ input.showing {
     color: rgb(0, 41, 0);
     background-color: rgb(147, 255, 153);
 }
+
 input.showing2 {
     color: rgb(41, 0, 0);
     background-color: rgb(255, 131, 131);
@@ -154,10 +159,25 @@ input.showing2 {
 
 
 @keyframes diagLines {
-    0% {left:0; width: 100%;}
-    100% {left:-100%; width: 200%}
+    0% {
+        left: 0;
+        width: 100%;
+    }
+
+    100% {
+        left: -100%;
+        width: 200%
+    }
 }
+
 @keyframes diagLines2 {
-    0% {left: 97.5%; width: 2.5%;}
-    100% {left:-2.5%; width: 102.5%}
+    0% {
+        left: 97.5%;
+        width: 2.5%;
+    }
+
+    100% {
+        left: -2.5%;
+        width: 102.5%
+    }
 }
