@@ -25,6 +25,16 @@ img {
     z-index: 4;
     position: relative;
 }
+
+img.ljFour {
+    margin-left: 25%;
+    margin-bottom: 5px;
+
+}
+figcaption {
+    margin-left: 25%;
+}
+
 /* Infinite, Automatic Animation */
 .name {
     position: relative;
@@ -41,7 +51,7 @@ img {
     top: -25px;
     left: 20%;
     z-index: 2;
-    padding: 4px;
+    padding: 5px;
     transition: 1.5s;
     
     width: 60%;
@@ -54,7 +64,7 @@ img {
     top: -21px;
     left: 15%;
     z-index: 1;
-    padding: 1px;
+    padding: 3px;
     transition: 1.7s;
     
     width: 70%;
