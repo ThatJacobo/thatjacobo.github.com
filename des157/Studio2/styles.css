@@ -1,6 +1,6 @@
 html {
     background-color: rgb(26, 26, 26);/* just in case the bg image fails to load */
-    font-family: futura pt;;
+    font-family: futura-pt, sans-serif;
 }
 
 body {
