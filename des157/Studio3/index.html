@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of PIG</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/vjh0hdk.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 class="title">Game of PIG</h1>
+    <!-- <button class="rst">Instructions</button> -->
+    <section id="instru">
+        <div id="popout"></div>
+        <div id="popout2"></div>
+        <h2>Instructions</h2>
+        <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.</p> 
+        <p>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>
+    </section>
+    <div id="gamecontrol">
+        <h2 id="change">Start a Game</h2>
+        <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
+    </div>
+<!--     <section>
+        <h1 id="playerOne">Player 1</h1>
+        <h1 id="playerTwo">Player 2</h1>
+    </section> -->
+    <section class="layingout">
+        <div id="score"><h1 id="playerOne">PLAYER 1</h1></div>
+        <!-- <div id="game"></div>
+        <div id="actions"></div> -->
+        <div id="mixGaA">
+            <div id="game"></div>
+            <div id="actions"></div>
+        </div>
+        <div id="P2Score"><h1 id="playerTwo">PLAYER 2</h1></div>  
+    </section>
+
+    <footer>
+        <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+        <a href="sources.html">Sources</a>
+    </footer>
+    <div class="background-complete"></div>
+
+    
+</body>
+</html>
