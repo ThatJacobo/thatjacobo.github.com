@@ -15,8 +15,21 @@ body {
 
 .title {
     text-align: center;
-    font-size: 30pt;
+    font-size: 35pt;
     margin-top: -10px;
+    text-decoration: underline;
+}
+#change {
+    margin-top: -2px;
+    text-align: center;
+}
+#startgame {
+    margin-left: 150px;
+    background-color: rgb(177, 228, 177);
+}
+#quit {
+    margin-left: 280px;
+    background-color: #ff5555;
 }
 
 button { 
