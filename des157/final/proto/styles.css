@@ -33,7 +33,6 @@ body {
     top: -60%;
     width: 0; 
     height: 0; 
-    z-index: -2;
     border-left: 270px solid transparent;
     border-right: 270px solid transparent;
   
@@ -49,7 +48,6 @@ body {
     margin-left: 420px;
     width: 0; 
     height: 0; 
-    z-index: -1;
     border-left: 270px solid transparent;
     border-right: 270px solid transparent;
   
@@ -59,7 +57,6 @@ body {
 /* could have gotten rid of the pt 2s for a lot of these classes probably but I did not have time to work out the logistics */
 img:hover + .arrow-up {
     display: block;
-    z-index: -5;
 
 }
 img:hover + .arrow-up2 {
@@ -73,7 +70,7 @@ img {
     height:360px;
     margin-top: 10%;
     opacity: 50%;
-    z-index: 5;
+    z-index: 2;
 }
 
 img:hover {
