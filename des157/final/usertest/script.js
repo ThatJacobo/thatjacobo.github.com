@@ -2,7 +2,7 @@
     'use strict';
     console.log("reading js");
 
-    alert("Alright Sorry if this gets repetetive thanks to how I scripted this website... \nReguardless, here is what you need to do\n-Hover each article and see the interactions\n-Enter each article and scroll through them\n-Interact with the images (first two articles only)\n");
+    alert("Alright Sorry if this gets repetetive thanks to how I scripted this website... \nReguardless, here is what you need to do:\n-Hover over each article and see the interactions\n-Enter each article and scroll through them\n-Interact with the images (first two articles only)\n");
 
     /* Developer Note - This code can be optimized by a LOT, I was just crunched for time thanks to personal reasons, so here you go! */
 
