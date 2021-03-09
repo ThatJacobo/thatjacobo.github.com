@@ -7,8 +7,9 @@ html {
     color: white;
     text-align: center;
     position: fixed;
-    margin-left: 34%;
+    margin-left: 35%;
     margin-top: 40px;
+    z-index: 9;
 }
 
 body {
@@ -29,13 +30,13 @@ body {
 /* spotlight effect here */
 .arrow-up {
     position: absolute;
-    left: 7.5%;
-    top: -60%;
+    margin-left: -140px;
+    top: -80%;
     width: 0; 
     height: 0; 
-    z-index: -2;
-    border-left: 270px solid transparent;
-    border-right: 270px solid transparent;
+    z-index: -1;
+    border-left: 320px solid transparent;
+    border-right: 320px solid transparent;
   
     border-bottom: 72.005vmax solid rgba(255, 233, 135, 0.356);
     display: none;
@@ -44,14 +45,13 @@ body {
 .arrow-up2 {
     display: none;
     position: absolute;
-    left: 7.5%;
-    top: -60%;
-    margin-left: 420px;
+    top: -80%;
+    margin-left: -75px;
     width: 0; 
     height: 0; 
     z-index: -1;
-    border-left: 270px solid transparent;
-    border-right: 270px solid transparent;
+    border-left: 320px solid transparent;
+    border-right: 320px solid transparent;
   
     border-bottom: 72.005vmax solid rgba(255, 233, 135, 0.356);
     overflow: hidden;
@@ -59,7 +59,6 @@ body {
 /* could have gotten rid of the pt 2s for a lot of these classes probably but I did not have time to work out the logistics */
 img:hover + .arrow-up {
     display: block;
-    z-index: -5;
 
 }
 img:hover + .arrow-up2 {
@@ -73,7 +72,7 @@ img {
     height:360px;
     margin-top: 10%;
     opacity: 50%;
-    z-index: 5;
+    z-index: 2;
 }
 
 img:hover {
@@ -81,18 +80,24 @@ img:hover {
     cursor: pointer;
 }
 
-#names {
+.names {
     position: relative;
     z-index: 10;
     color: white;
+    margin-top: 80px;
 }
 
 #movethis {
     padding-left: 60px;
 }
 
+.mover {
+    padding-left: 60px;
+}
+
 .pics {
     display: flex;
+    /* margin-top: 60px; */
     width: 100%;
     height: 90%;
     overflow: scroll;
@@ -101,17 +106,25 @@ img:hover {
 
 .Rick {
     position: absolute;
-    margin-left: 16%;
-    font-size: 40pt;
-    margin-top: 31%;
+/*     margin-left: 16%; */
+    font-size: 33pt;
+    margin-top: 90%;
+    margin-left: 25px;
+    z-index: 3;
 }
 
 .Jastor {
     position: absolute;
-    margin-left: 16%;
-    padding-left: 420px;
-    margin-top: 31%;
-    font-size: 40pt;
+    /* margin-left: 16%; */
+    /* padding-left: 420px; */
+    margin-top: 78%;
+    margin-left: 72px;
+    font-size: 33pt;
+    z-index: 3;
+}
+
+.Alma {
+    position: absolute;
 }
 
 
@@ -122,6 +135,22 @@ img:hover {
 }
 
 .hidden2 {
+    position: absolute;
+    display: none;
+    
+}
+
+.hidden3 {
+    position: absolute;
+    display: none;
+    
+}
+.hidden4 {
+    position: absolute;
+    display: none;
+    
+}
+.hidden5 {
     position: absolute;
     display: none;
     
@@ -141,11 +170,21 @@ h1.top {
     padding-top: 15px;
     font-size: 22pt;
     margin-left: 2%;
-    color: tomato;
+    color: gray;
 }
 
 #JayColor {
-    color: cornflowerblue;
+    color: tomato;
+}
+
+#AlmaColor {
+    color: rgb(255, 85, 85);
+}
+#Vgk {
+    color: cyan;
+}
+#MattColor {
+    color: rgb(31, 83, 255);
 }
 
 p.top {
@@ -162,15 +201,32 @@ p.top {
     bottom: -12px;
     z-index: 13;
 }
+.picinfo .words5{
+    background-color: rgb(31, 83, 255);
+    padding-top: 5px;
+    padding-bottom: 6px;
+}
+
+.picinfo .words4{
+    background-color: cyan;
+    padding-top: 5px;
+    padding-bottom: 6px;
+}
+
+.picinfo .words3{
+    background-color: rgb(255, 85, 85);
+    padding-top: 5px;
+    padding-bottom: 6px;
+}
 
 .picinfo .words2{
-    background-color: cornflowerblue;
+    background-color: tomato;
     padding-top: 5px;
     padding-bottom: 6px;
 }
 
 .picinfo .words{
-    background-color: tomato;
+    background-color: grey;
     padding-top: 5px;
     padding-bottom: 6px;
 }
@@ -188,6 +244,27 @@ p.top {
     padding-left: 20px;
     margin-top: 15px;
 }
+
+.words3 {
+    font-size: 15pt;
+    color: white;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+.words4 {
+    font-size: 15pt;
+    color: black;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+.words5 {
+    font-size: 15pt;
+    color: white;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+
 #cover {
     position: fixed;
     top: -200px;
@@ -199,6 +276,35 @@ p.top {
 }
 
 #cover2 {
+    position: fixed;
+    top: -200px;
+    right: -10px;
+    opacity: 100%;
+    width: 800px;
+    height: 800px;
+    z-index: 12;
+}
+
+#cover3 {
+    position: fixed;
+    top: -200px;
+    right: -10px;
+    opacity: 100%;
+    width: 800px;
+    height: 800px;
+    z-index: 12;
+}
+
+#cover4 {
+    position: fixed;
+    top: -200px;
+    right: -10px;
+    opacity: 100%;
+    width: 800px;
+    height: 800px;
+    z-index: 12;
+}
+#cover5 {
     position: fixed;
     top: -200px;
     right: -10px;
