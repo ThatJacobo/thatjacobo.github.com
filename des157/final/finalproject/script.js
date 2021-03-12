@@ -20,6 +20,7 @@
     const rickPics = [
         'RickOrtegaPaint.PNG',
         'ChimMaya.PNG',
+        'RickSP.PNG',
     ];
     let currentImage = 0;
 
@@ -32,6 +33,10 @@
             currentImage++;
         }
         else if (currentImage == 1) {
+            rickWords.innerHTML ='Rick Ortega Painting for an Art Show';
+            currentImage = 0;
+        }
+        else if (currentImage == 2) {
             rickWords.innerHTML ='Rick Ortega Painting for an Art Show';
             currentImage = 0;
         }
@@ -237,23 +242,13 @@ const Alma = document.getElementById('almaMove'); /*sets portrait as an entity t
     })
 
     /* This should be for the scrolling left-right arrows */
-/*     function smoothScroll (event) {
-        event.preventDefault();
-
-        const targetID = event.target.getAttribute('href');
-        const targetAnchor = document.querySelector(targetID);
-
-        const originalTop = Math.floor(targetAnchor.getBoundingClientRect().top) - 200;
-        window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth'});
-        console.log(originalTop);
-    } */
 
     let pictureSec = document.getElementById('pics');
     const moveRight = document.getElementById('right');
     const moveLeft = document.getElementById('left');
 
 
-    moveRight.addEventListener('mouseover', function(event) {
+    moveRight.addEventListener('mouseover', function(event) {/* scrolls right on right arrow hover */
         event.preventDefault();
         var val = setInterval(function() {
             var leftPos = pictureSec.scrollBy(100, 0);
@@ -261,12 +256,12 @@ const Alma = document.getElementById('almaMove'); /*sets portrait as an entity t
             
         }, 40);
 
-        moveRight.addEventListener('mouseleave', function() {
+        moveRight.addEventListener('mouseleave', function() {/* stops scroll when stopping a hover */
             clearInterval(val);
         });
     }, true)
 
-    moveLeft.addEventListener('mouseover', function(event) {
+    moveLeft.addEventListener('mouseover', function(event) {/* scrolls left on left arrow hover */
         event.preventDefault();
         var val = setInterval(function() {
             var leftPos = pictureSec.scrollBy(-100, 0);
@@ -274,7 +269,7 @@ const Alma = document.getElementById('almaMove'); /*sets portrait as an entity t
             
         }, 40);
 
-        moveLeft.addEventListener('mouseleave', function() {
+        moveLeft.addEventListener('mouseleave', function() {/* stops scroll when stopping a hover */
             clearInterval(val);
         });
     }, true)
