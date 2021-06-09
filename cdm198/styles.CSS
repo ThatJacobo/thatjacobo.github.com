@@ -116,6 +116,13 @@ figcaption {
 #film {
     margin-bottom: -35px;
 }
+#gifford {
+    width: 60%;
+    margin-left: 20%
+}
+#last {
+    padding-top: 20px;
+}
 
 .paper:hover {
     color: rgb(255, 217, 0);
